@@ -1,0 +1,418 @@
+::selection {
+	color: darkgoldenrod;
+}
+
+body {
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: 10000px;
+}
+
+#nav-bar {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	height: 10vh;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	z-index: 1;
+}
+
+@media (max-width: 600px) {
+	#nav-bar {
+		justify-content: center;
+	}
+}
+
+#logo {
+	justify-content: flex-start;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	height: 50px;
+	margin-left: 30%;
+}
+
+#nav-bar ul {
+	display: inline-flex;
+	margin-right: 5%;
+	margin-top: 50px;
+}
+
+#nav-bar li {
+	font-weight: 500;
+	margin-left: 5px;
+	list-style-type: none;
+}
+
+.nav-item {
+	padding: 24px 10px 24px 10px;
+	text-decoration: none;
+	color: white;
+	font-size: 1.3em;
+}
+
+#dark-mode {
+	width: 30px;
+	margin-top: -8px;
+}
+
+#light-mode {
+	width: 30px;
+	margin-top: -8px;
+}
+
+#home {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+}
+
+#background-img {
+	background-image: url("images/background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	border-bottom: 5px solid darkgoldenrod;
+}
+
+#information {
+	margin-left: 60px;
+	width: 50%;
+}
+
+#main-header {
+	font-size: 2.3em;
+	color: white;
+}
+
+#second-header {
+	font-size: 1.6em;
+	color: white;
+}
+
+.about-p {
+	color: white;
+}
+
+.link {
+	text-decoration: none;
+	color: darkgoldenrod;
+}
+
+#projects {
+	background-color: #0d0e0d;
+	width: 100%;
+	height: 100vh;
+	border-bottom: 5px solid darkgoldenrod;
+}
+
+@media (max-width: 840px) {
+	#projects {
+		height: 1900px;
+	}
+}
+
+@media (min-width: 817px) {
+	#projects {
+		height: 1100px;
+	}
+}
+
+@media (min-width: 1217px) {
+	#projects {
+		height: 800px;
+	}
+}
+
+#project-area {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	padding-top: 25px;
+}
+
+.project-panel {
+	border: 2px solid darkgoldenrod;
+	border-radius: 5px;
+	margin-top: 10px;
+	width: 350px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+.project-panel:hover {
+	border: 2px solid white;
+}
+
+.panel-image {
+	object-fit: fill;
+	width: 100%;
+	height: 100%;
+	color: white;
+	filter: grayscale(100%);
+	transition: transform .5s, filter 1.5s ease-in-out;
+	z-index: 2;
+}
+
+.project-panel:hover > .panel-image {
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+
+.workLink {
+	text-decoration: none;
+}
+
+#view-more {
+	display: block;
+	width: 100px;
+	border: 2px solid white;
+	padding: 12px 10px;
+	text-align: center;
+	border-radius: 5px;
+	margin-top: 20px;
+	text-decoration: none;
+	margin: 0 auto 0 auto;
+	color: white;
+}
+
+.sub-heading {
+	color: white;
+	text-align: center;
+	font-size: 2.3em;
+}
+
+#skills {
+	background-color: #0d0d0d;
+	width: 100%;
+	height: 100vh;
+	border-bottom: 5px solid darkgoldenrod;
+}
+
+#skill-area {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	width: 100%;
+	height: 500px;
+	padding-top: 25px;
+	text-align: center;
+}
+
+@media (max-width: 816px) {
+	#skill-area {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+}
+
+#icon-1 {
+	margin-bottom: -20px;
+	width: 100px;
+}
+#icon-2 {
+	margin-bottom: -20px;
+	width: 100px;
+}
+#icon-3 {
+	margin-bottom: -20px;
+	width: 100px;
+}
+#icon-4 {
+	margin-bottom: -20px;
+	width: 100px;
+}
+#icon-5 {
+	margin-bottom: -20px;
+	width: 100px;
+}
+#icon-6 {
+	margin-bottom: -20px;
+	width: 100px;
+}
+
+#contact {
+	background-color: #0d0d0d;
+	width: 100%;
+	height: 100vh;
+	border-bottom: 5px solid darkgoldenrod;
+}
+
+@media (max-width: 600px) {
+	#contact-right {
+		width: 35%;
+		font-size: 75%;
+	}
+}
+
+@media (max-width: 901px) {
+	#contact {
+		height: 105vh;
+	}
+}
+
+#contact-sentence {
+	padding-top: 25px;
+	text-align: center;
+}
+
+#contact-space {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+#contact-left {
+	width: 40%;
+	height: 70%;
+}
+
+#input-box {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.box {
+	border-radius: 5px;
+	height: 20px;
+	color: white;
+	background-color: rgb(40, 42, 44);
+	border: 1px solid rgb(40, 42, 44);
+}
+
+.box:hover {
+	background-color: rgb(31, 33, 34);
+}
+
+#message:hover {
+	background-color: rgb(31, 33, 34);
+}
+
+#message {
+	color: white;
+	max-height: 100px;
+	height: 50%;
+	border-radius: 5px;
+	resize: vertical;
+	background-color: rgb(40, 42, 44);
+	border: 1px solid rgb(40, 42, 44);
+}
+
+#contact-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 40%;
+	height: 55%;
+}
+
+#arrow {
+	width: 35px;
+	padding-bottom: 15px;
+}
+
+#other {
+	background-color: #0d0d0d;
+	width: 100%;
+	height: 100vh;
+	border-bottom: 5px solid darkgoldenrod;
+}
+
+#soon {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 85%;
+}
+
+#footer {
+	background-color: #0d0d0d;
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+	flex-flow: column wrap;
+}
+
+#media {
+	margin-left: 20px;
+}
+
+#social-1 {
+	padding-right: 10px;
+	padding-left: 5px;
+	width: 50px;
+}
+#social-2 {
+	padding-right: 10px;
+	padding-left: 5px;
+	width: 50px;
+}
+#social-3 {
+	padding-right: 10px;
+	padding-left: 5px;
+	width: 50px;
+}
+#social-4 {
+	width: 35px;
+	padding-right: 25px;
+	padding-left: 5px;
+}
+#social-5 {
+	width: 35px;
+	padding-right: 25px;
+	padding-left: 5px;
+}
+
+.social-link {
+	display: inline-block;
+	transform: translateY(0);
+	transition: transform 0.3s ease-out;
+}
+
+.social-link:hover {
+	transform: translateY(8px);
+}
+
+.sub {
+	padding-top: 10px;
+}
+
+#otherArea {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.example {
+	border-radius: 10px;
+	display: flex;
+	background-color: #282a2c;
+	height: 100px;
+	margin-top: 100px;
+	justify-content: center;
+	align-items: center;
+}
+
+#certificate {
+	color: darkgoldenrod;
+	text-decoration: none;
+}

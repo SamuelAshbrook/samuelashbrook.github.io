@@ -1,0 +1,217 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> <!--Importing fonts-->
+        <link rel= "stylesheet" type="text/css" href= "style.css"> <!--Linking css file-->
+    </head>
+    <body>
+        <div id= "container"> <!--Creating a container-->
+            <div id= "background-img"> <!--Background image-->
+             <nav id= "nav-bar"> <!--Navigation bar at top of screen-->
+                 <a href= "#home"><img src= "images/logo.png" id= "logo" alt= "logo"/></a> <!--Logo-->
+                 <ul> <!--List containing navigation item links-->
+                    <li><a href= "#projects" class= "nav-item">Projects</a></li>
+                    <li><a href= "#skills" class= "nav-item">Skills</a></li>
+                    <li><a href= "#contact" class= "nav-item">Contact</a></li>
+                    <img src="images/sun.png" alt= "lightmode" id= "light-mode"/>
+                    <img src= "images/moon.png" alt= "dark-mode" id= "dark-mode"/>
+                </ul>
+             </nav>
+                <section id= "home"> <!--Home page-->
+
+                    <div id= "information"> <!--Div containing information about me-->
+                        <h1 id= "main-header">Samuel Ashbrook</h1> 
+                        <h1 id= "second-header">Front End Web Developer</h1>
+                        <p class= "about-p">I am a hard working junior front-end web developer from Tonbridge, UK.</p>
+                        <p class= "about-p">I have a passion for creating responsive, unique and user friendly websites which will be eye catching for your users.</p>
+                        <p class= "about-p">Primarily i use HTML, CSS and JavaScript to construct websites but you can view my full skillset <a href= "#skills" class= "link">here</a> for more information.</p>
+                    </div>
+                    
+                </section>
+            </div>
+            <section id= "projects"> <!--Projects page-->
+                <h1 class= "sub-heading">Projects</h1>
+                <div id= "project-area"> <!--Div containing images of my projects-->
+                    <a href= "" target= "_blank" class= "workLink">
+					    <div class= "project-panel">
+			 		    	<video class= "panel-image" autoplay = "" muted= "" loop= "">
+                                 <source src= "images/project1.mp4" type= "video/mp4">
+                             </video>
+					    </div>
+                    </a>
+                    <a href= "" target= "_blank" class= "workLink">
+					    <div class= "project-panel">
+                            <video class= "panel-image" autoplay = "" muted= "" loop= "">
+                                <source src= "images/project2.mp4" type= "video/mp4">
+                            </video>
+					    </div>
+                    </a>
+                    <a href= "" target= "_blank" class= "workLink">
+					    <div class= "project-panel">
+                            <video class= "panel-image" autoplay = "" muted= "" loop= "">
+                                <source src= "images/project3.mp4" type= "video/mp4">
+                            </video>
+					    </div>
+                    </a>
+                    <a href= "" target= "_blank" class= "workLink">
+					    <div class= "project-panel">
+                            <video class= "panel-image" autoplay = "" muted= "" loop= "">
+                                <source src= "images/project4.mp4" type= "video/mp4">
+                            </video>
+					    </div>
+                    </a>
+                    <a href= "" target= "_blank" class= "workLink">
+					    <div class= "project-panel">
+			 		    	<img src= "images/project5.png" alt= "Project 5 image" class= "panel-image"/>
+					    </div>
+                    </a>
+                    <a href= "" target= "_blank" class= "workLink">
+					    <div class= "project-panel">
+                            <video class= "panel-image" autoplay = "" muted= "" loop= "">
+                                <source src= "images/project6.mp4" type= "video/mp4">
+                            </video>
+					    </div>
+                    </a>
+                 </div>
+                 <a href= "https://codepen.io/SmamS" target= "_blank" id= "view-more">View More</a> <!--Button linking to my codepen account-->
+                
+            </section>
+            <section id= "skills"> <!--Skills page-->
+                <h1 class= "sub-heading">Skills</h1>
+
+                <div id= "skill-area"> <!--Divs containing my skillset-->
+                    <div class= "language">
+
+                        <img src="images/html5.png" alt= "html" id= "icon-1"/>
+                        <p class= "sub">HTML5</p>
+
+                    </div>
+
+                    <div class= "language">
+
+                        <img src="images/css3.png" alt= "css" id= "icon-2"/>
+                        <p class= "sub">CSS</p>
+
+                    </div>
+
+                    <div class= "language">
+
+                        <img src="images/javascript.png" alt= "javascript" id= "icon-3"/>
+                        <p class= "sub">JavaScript</p>
+
+                    </div>
+
+                    <div class= "language">
+
+                        <img src="images/react.png" alt= "react" id= "icon-4"/>
+                        <p class= "sub">React</p>
+
+                    </div>
+
+                    <div class= "language">
+
+                        <img src="images/jquery.png" alt= "jquery" id= "icon-5"/>
+                        <p class= "sub">jQuery</p>
+
+                    </div>
+
+                    <div class= "language">
+
+                        <img src="images/git.png" alt= "git" id= "icon-6"/>
+                        <p class= "sub">Git</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <section id= "contact"> <!--Contact Page-->
+                <h1 class= "sub-heading">Contact</h1>
+                <div id= "contact-sentence"> <!--Div containing contact information-->
+                    <p class= "about-p">If you would like to talk with me or want to build a web application together then feel free to use one of the methods below.</p>
+                    <p class= "about-p">You can also contact me through social media.</p>
+                </div>
+                <div id= "contact-space">
+                    <form id= "contact-left"> <!--Form allowing user to contact me-->
+                        <div id= "input-box">
+                            <label for= "name">Name:</label>
+                            <input type= "text" id= "name" name="name" class= "box" required/>
+                        </div>
+                       
+                        <div id= "input-box">
+                            <label for= "email">Email:</label>
+                            <input type= "email" id= "email" name="email" class= "box" required/>
+                        </div>
+
+                        <div id= "input-box">
+                            <label for= "subject">Subject:</label>
+                            <input type= "text" id= "subject" name="subject" class= "box" required/>
+                        </div>
+
+                        <div id= "input-box">
+                            <label for= "message">Message:</label>
+                            <textarea id= "message" required></textarea>
+                        </div>
+                        <button type= "button" value= "Submit" id= "submit" name= "submitButton" onclick= "limit()">Submit</button>
+                    </form>
+                    <div id= "contact-right">
+                        <p class= "about-p">Get in touch via email</p>
+                        <img src= "images/arrow.png" id= "arrow"/>
+                        <a href="mailto:ashbrooksamuel0@gmail.com" class= "link">ashbrooksamuel0@gmail.com</a> <!--My email-->
+                    </div>
+                </div>
+                
+            </section>
+            <section id= "other"> <!--Other page-->
+                <h1 class= "sub-heading">Education</h1> 
+                <div id= "otherArea"> <!--Div containing information about my education-->
+                    <h4 class= "about-p"><strong>Btec Level 3 Extended Diploma in IT 2019-Present</strong></h4>
+                    <ul>
+                        <li>Computer Systems</li>
+                        <li>Computer Networks</li>
+                        <li>Event Driven Programming (Visual Basic)</li>
+                        <li>Website Production (HTML, CSS, JavaScript)</li>
+                        <li>Software Design & Development</li>
+                        <li>Procedural Programming (Python)</li>
+                        <li>Client Side Customisation (HTML, CSS, JavaScript)</li>
+                        <li>Digital Graphics / 2D Animation</li>
+                    </ul>
+                </div>
+                <h1 class= "sub-heading">Certificates</h1>
+                <div id= "otherArea"> <!--Div containing information about my certificates-->
+                    <h4 class= "about-p"><strong>freeCodeCamp</strong></h4>
+                    <ul>
+                        <li><a href= "https://www.freecodecamp.org/certification/samuelashbrook/responsive-web-design" target= "_blank" id= "certificate">Responsive Web Design Certification (300 hours)</a></li>
+                    </ul>
+                </div>
+            </section>
+            <footer id= "footer"> <!--Footer bar-->
+                <div id= "media">
+                    <a href= "https://twitter.com/ashbrook_samuel" target= "_blank" class= "social-link"> <!--Link to my twiiter account-->
+                        <img src= "images/twitter.png" alt= "Twitter" id= "social-1"/>
+                    </a>
+    
+                    <a href= "https://www.linkedin.com/in/samuelashbrook/" target= "_blank" class= "social-link">  <!--Link to my linkedin account-->
+                        <img src= "images/LinkedIn.png" alt= "LinkedIn" id= "social-2"/>
+                    </a>
+    
+                    <a href= "https://github.com/SamuelAshbrook" target= "_blank" class= "social-link"> <!--Link to my github account-->
+                        <img src= "images/github.png" alt= "GitHub" id= "social-3"/>
+                    </a>
+    
+                    <a href= "https://codepen.io/SmamS" target= "_blank" class= "social-link"> <!--Link to my codepen account-->
+                        <img src= "images/codepen.png" alt= "CodePen" id= "social-4"/>
+                    </a>
+    
+                    <a href= "https://dev.to/ashbrook_samuel" target= "_blank" class= "social-link"> <!--Link to my dev.to account-->
+                        <img src= "images/dev.png" alt= "DEV" id= "social-5"/>
+                    </a>
+                    
+                </div>
+                <p class= "about-p">©2020. All Rights Reserved | Samuel Ashbrook</p>
+            </footer>
+        </div>
+        <script src= "changeMode.js"></script> <!--Linking JavaScript-->
+    </body>
+</html>
+
