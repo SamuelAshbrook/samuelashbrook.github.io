@@ -145,15 +145,15 @@ let swap = sun.addEventListener("click", () => {
   })
 
   //Changing the background and border colors
-  projectPage.style.backgroundColor = "#E6E2E3"
+  projectPage.style.backgroundColor = "#FFFAFA"
   projectPage.style.borderBottom = "5px solid #6200EE"
-  skillPage.style.backgroundColor = "#E6E2E3"
+  skillPage.style.backgroundColor = "#FFFAFA"
   skillPage.style.borderBottom = "5px solid #6200EE"
-  contactPage.style.backgroundColor = "#E6E2E3"
+  contactPage.style.backgroundColor = "#FFFAFA"
   contactPage.style.borderBottom = "5px solid #6200EE"
-  otherPage.style.backgroundColor = "#E6E2E3"
+  otherPage.style.backgroundColor = "#FFFAFA"
   otherPage.style.borderBottom = "5px solid #6200EE"
-  footerPage.style.backgroundColor = "#E6E2E3"
+  footerPage.style.backgroundColor = "#FFFAFA"
     
   for (let k = 0; k < subHeading.length; k++) { //Using a for loop to change each "subHeading" element
     subHeading[k].style.color = "black"
