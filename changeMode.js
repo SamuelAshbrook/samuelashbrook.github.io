@@ -167,7 +167,6 @@ let swap = sun.addEventListener("click", () => {
   icon2.setAttribute("src", "images/css3-switch.png");
   icon3.setAttribute("src", "images/javascript-switch.png");
   icon4.setAttribute("src", "images/react-switch.png");
-  icon5.setAttribute("src", "images/jquery-switch.png");
   icon6.setAttribute("src", "images/git-switch.png");
     
   for (let l = 0; l < subtitle.length; l++) { //Using a for loop to change each "subtitle" element
@@ -271,7 +270,6 @@ let swapBack = moon.addEventListener("click", () => {
   icon2.setAttribute("src", "images/css3.png");
   icon3.setAttribute("src", "images/javascript.png");
   icon4.setAttribute("src", "images/react.png");
-  icon5.setAttribute("src", "images/jquery.png");
   icon6.setAttribute("src", "images/git.png");
 
   for (let l = 0; l < subtitle.length; l++) {
